@@ -1,0 +1,73 @@
+{
+  "repo": "parity-mob-forms-vault",
+  "language": "Go",
+  "category": "Mobile workflows",
+  "goal": "Create a Go reference implementation for forms workflows, centered on visual model generation, layout fixtures, and stable geometry snapshots.",
+  "review_model": {
+    "terms": [
+      "form pressure",
+      "sync drift",
+      "local state",
+      "conflict cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "form pressure",
+      "signal": 58,
+      "slack": 28,
+      "drag": 24,
+      "confidence": 67,
+      "score": 139,
+      "lane": "watch"
+    },
+    {
+      "name": "stress",
+      "focus": "sync drift",
+      "signal": 81,
+      "slack": 31,
+      "drag": 28,
+      "confidence": 63,
+      "score": 172,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "local state",
+      "signal": 86,
+      "slack": 44,
+      "drag": 12,
+      "confidence": 74,
+      "score": 254,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "conflict cost",
+      "signal": 69,
+      "slack": 45,
+      "drag": 13,
+      "confidence": 89,
+      "score": 233,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "form pressure",
+      "signal": 54,
+      "slack": 54,
+      "drag": 15,
+      "confidence": 56,
+      "score": 173,
+      "lane": "ship"
+    }
+  ]
+}
