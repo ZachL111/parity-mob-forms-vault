@@ -1,0 +1,17 @@
+{
+  "repo": "parity-mob-forms-vault",
+  "thresholds": {
+    "signal": 3,
+    "slack": 1,
+    "confidence": 1,
+    "drag": 5,
+    "ship": 201,
+    "watch": 116
+  },
+  "terms": [
+    "form pressure",
+    "sync drift",
+    "local state",
+    "conflict cost"
+  ]
+}
